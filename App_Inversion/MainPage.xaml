@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Inversion.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Frame BackgroundColor="#2196F3"
+                   Padding="24"
+                   CornerRadius="20"
+                   Margin="15">
+                <StackLayout>
+                    <Label Text="Inversores"
+                           FontSize="Large"
+                           HorizontalOptions="Center"
+                           TextColor="#fff" />
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="20"
+                   BackgroundColor="#91D9FE"
+                   Margin="15">
+                <StackLayout>
+                    <Label Text="Monto Inversor #1" 
+                           FontSize="Medium" 
+                           FontAttributes="Bold" 
+                           TextColor="#eee"/>
+                    <Entry x:Name="montoInversionista_1"
+                           Keyboard="Numeric"/>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="20"
+                   BackgroundColor="#91D9FE"
+                   Margin="15">
+                <StackLayout>
+                    <Label Text="Monto Inversor #2"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           TextColor="#eee" />
+                    <Entry x:Name="montoInversionista_2"
+                           Keyboard="Numeric"/>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="20"
+                   BackgroundColor="#91D9FE"
+                   Margin="15">
+                <StackLayout>
+                    <Label Text="Monto Inversor #3"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           TextColor="#eee" />
+                    <Entry x:Name="montoInversionista_3"
+                           Keyboard="Numeric"/>
+                </StackLayout>
+            </Frame>
+            <Button Text="Calcular"
+                    FontSize="Subtitle"
+                    FontAttributes="Bold"
+                    BackgroundColor="#4ab" 
+                    WidthRequest="350"
+                    HeightRequest="65"
+                    CornerRadius="10"
+                    TextColor="#fff"
+                    x:Name="btnCalcular"
+                    Clicked="btnCalcular_Clicked"
+                    HorizontalOptions="CenterAndExpand"
+                    BorderColor="#4FC2FF"/>
+            <Button Text="Borrar Valores"
+                    FontSize="Subtitle"
+                    FontAttributes="Bold"
+                    BackgroundColor="#4ab"
+                    WidthRequest="350"
+                    HeightRequest="65"
+                    CornerRadius="10"
+                    TextColor="#fff"
+                    x:Name="btnCampos"
+                    Clicked="btnCampos_Clicked"
+                    HorizontalOptions="CenterAndExpand"
+                    BorderColor="#4FC2FF" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

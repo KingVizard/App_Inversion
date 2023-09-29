@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Inversion.ResultadosInversion"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Frame BackgroundColor="#9539A4"
+                   Padding="24"
+                   CornerRadius="20"
+                   Margin="15">
+                <StackLayout>
+                    <Label Text="Resultados Inversion"
+                           FontSize="Large"
+                           HorizontalOptions="Center"
+                           TextColor="#fff" />
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="20"
+                   BackgroundColor="#B24EAA"
+                   Margin="15">
+                <StackLayout>
+                    <Label Text="Acumulacion Total"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           TextColor="#eee" />
+                    <Entry x:Name="acumulacionTotal"
+                           IsReadOnly="True"
+                           TextColor="#ddd" />
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="20"
+                   BackgroundColor="#B24EAA"
+                   Margin="15">
+                <StackLayout>
+                    <Label Text="Monto Inversor #1"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           TextColor="#eee" />
+                    <Entry x:Name="porcentajeInversionista_1"
+                           IsReadOnly="True"
+                           TextColor="#ddd" />
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="20"
+                   BackgroundColor="#B24EAA"
+                   Margin="15">
+                <StackLayout>
+                    <Label Text="Monto Inversor #2"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           TextColor="#eee" />
+                    <Entry x:Name="porcentajeInversionista_2"
+                           IsReadOnly="True"
+                           TextColor="#ddd" />
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="20"
+                   BackgroundColor="#B24EAA"
+                   Margin="15">
+                <StackLayout>
+                    <Label Text="Monto Inversor #3"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           TextColor="#ddd" />
+                    <Entry x:Name="porcentajeInversionista_3"
+                           IsReadOnly="True"
+                           TextColor="#ddd" />
+                </StackLayout>
+            </Frame>
+      
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
